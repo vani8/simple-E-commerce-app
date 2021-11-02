@@ -1,0 +1,17 @@
+<ng-container>
+  <div class="thanks">Thank you for Shopping</div>
+  <div class="container" *ngFor="let item of products">
+    <div class="card">
+      <h5 class="card-title">You have bought</h5>
+      <div>{{ item.title }}</div>
+
+      <div>quantity - {{ item.quantity }}</div>
+      <div>
+        <h4>Cart Total was : rs.{{ grandTotal }}</h4>
+      </div>
+      <div>
+        <a [routerLink]="['/cart']"> Go Back</a>
+      </div>
+    </div>
+  </div>
+</ng-container>

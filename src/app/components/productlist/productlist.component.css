@@ -1,0 +1,13 @@
+.card {
+  padding: 30px 30px 30px 200px;
+  margin: 50px 100px 50px 100px;
+}
+img {
+  height: 400px;
+  width: 400px;
+}
+.btn {
+  margin: 10px;
+  width: 200px;
+  margin-left: 80px;
+}

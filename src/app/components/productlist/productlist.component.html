@@ -1,24 +1,23 @@
-<!-- <section class="container"> -->
-<!-- <div class="row"> -->
-<!-- <ng-container *ngFor="let item of productList"> -->
-<!-- <div class="card col-md-3"> -->
-<!-- <img src="{{ item.image }}" alt="" /> -->
-<!-- <h5 class="image-title">{{ item.title }}</h5>
-    <p><strong>Price:</strong>${{ item.price }}</p>
-    <p></p> -->
-<!-- <button class="btn btn-warning">Add to Cart</button> -->
-<!-- </div> -->
-<!-- </ng-container> -->
-<!-- </div> -->
-<!-- </section> -->
+<section class="container">
+  <div class="align-item-center">
+    <ng-container *ngIf="productDetails">
+      <div class="card">
+        <img [src]="productDetails.image" />
 
-<!-- <ng-container *ngFor="let item of products">
-  <img src="{{ item.image }}" alt="" />
-  <h5 class="image-title">{{ item.title }}</h5>
-  <p><strong>Price:</strong>${{ item.price }}</p>
-  <p>${{ item.description }}</p>
-</ng-container> -->
-
-<div>
-  <!-- {{ data }} -->
-</div>
+        <h5 class="image-title">{{ productDetails.title }}</h5>
+        <p><strong>Price:</strong>{{ productDetails.price }}</p>
+        <p><strong>About:</strong> {{ productDetails.description }}</p>
+        <p><strong>Quantity:</strong> {{ productDetails.quantity }}</p>
+        <button
+          class="btn btn-warning"
+          (click)="addtocart(productDetails)"
+          routerLink="cart"
+        >
+          Add to Cart
+        </button>
+        <button class="btn btn-warning" routerLink="/cart">Go to cart</button>
+        <button class="btn btn-warning" routerLink="/">Shop More</button>
+      </div>
+    </ng-container>
+  </div>
+</section>

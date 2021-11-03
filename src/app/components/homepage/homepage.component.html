@@ -20,23 +20,21 @@
   <div class="row">
     <ng-container *ngFor="let item of productList">
       <div class="card col-md-3">
-        <app-productlist [data]="message"></app-productlist>
-        <img
-          src="{{ item.image }}"
-          alt=""
-          (click)="getItem(item)"
-          routerLink="productlist"
-        />
+        <img src="{{ item.image }}" alt="" />
 
         <h5 class="image-title">{{ item.title }}</h5>
         <p><strong>Price:</strong>${{ item.price }}</p>
         <p></p>
         <button
           class="btn btn-warning"
-          (click)="addtocart(item)"
-          routerlink="/cart"
+          (click)="getProductDetails(item)"
+          routerLink="productlist"
         >
-          Add to Cart
+          View the details.
+        </button>
+
+        <button class="btn btn-warning btn-s" (click)="addtocart(item)">
+          Add to cart
         </button>
       </div>
     </ng-container>

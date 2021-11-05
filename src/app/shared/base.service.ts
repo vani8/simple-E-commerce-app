@@ -8,7 +8,6 @@ import { map } from 'rxjs/operators'
   providedIn: 'root'
 })
 export class BaseService {
-  [x: string]: any;
 
   constructor(private http: HttpClient) { }
   getProduct(){

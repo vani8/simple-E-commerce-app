@@ -1,33 +1,8 @@
-.head {
-  font-size: 30px;
-}
-.ship {
-  font-size: 40px;
-  padding-right: 20px;
-}
-.form-control {
-  border-radius: 3px;
-  width: 600px;
-  margin-left: 20px;
-}
-.search-icon {
-  position: relative;
-  z-index: 10;
-  right: 50%;
-  top: 20px;
-  color: rgb(247, 219, 65);
-}
-.cart-icon {
-  margin-right: 20px;
-}
 .image-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100ch;
-}
-.badge {
-  font-size: 10px;
 }
 .card {
   margin: 40px;

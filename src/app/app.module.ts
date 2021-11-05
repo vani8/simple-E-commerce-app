@@ -8,6 +8,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { ProductlistComponent } from './components/productlist/productlist.component';
 import { CartComponent } from './components/cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './components/header/header.component';
 
 // import { HttpClientModule } from '@angular/common/http';
 // import { CartService } from './components/shared/cart-service.service'
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     CheckoutComponent,
     HomepageComponent,
     ProductlistComponent,
-    CartComponent
+    CartComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
